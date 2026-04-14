@@ -9,25 +9,7 @@
 | **Primary Use** | Daily risk management and monitoring of trading desks. | Determining **Economic Capital** and Regulatory Capital requirements for banks. |
 
 ## Factors for Calculating Credit VaR
-
-Calculating Credit VaR is significantly more complex than Market VaR because it has to account for the "interconnectedness" of the economy and the specific lifecycle of a credit rating.
-
-Here is a summary of the key factors and the use of transition matrices:
-
-----------
-
-## **1. Core Drivers of Credit VaR**
-
-Unlike simple price movements, Credit VaR relies on two primary "hidden" factors:
-
--   **Credit Correlation:** This recognizes that defaults are **not** independent. In a recession, multiple companies tend to fail at once. As correlation increases during downturns, the risk to financial institutions spikes significantly.
-    
--   **Economic Environment:** A strong economy acts as a "rising tide" that lowers default risk, while a poor economy creates a systematic increase in risk across the board.
    
-
-
-----------
-
 ## **1. Core Drivers of Credit VaR**
 
 Unlike simple price movements, Credit VaR relies on two primary "hidden" factors:
@@ -36,8 +18,6 @@ Unlike simple price movements, Credit VaR relies on two primary "hidden" factors
     
 -   **Economic Environment:** A strong economy acts as a "rising tide" that lowers default risk, while a poor economy creates a systematic increase in risk across the board.
     
-
-----------
 
 ## **2. Rating Transition Matrices**
 
@@ -76,6 +56,6 @@ While the math assumes independence, the text highlights a real-world flaw: **Ra
 Does the math for the time horizon adjustments make sense, or would you like to see another example of how the matrix "powers up"?
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwNjUzOTIyNywtMTk5MjQ2MDkwLC0yMD
+eyJoaXN0b3J5IjpbMTMwOTcxODQxNCwtMTk5MjQ2MDkwLC0yMD
 g4NzQ2NjEyLC0zMzI0NTUzNjNdfQ==
 -->

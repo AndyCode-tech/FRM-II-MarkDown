@@ -121,9 +121,18 @@ To make the math work, Vasicek’s model makes three big "Large Portfolio" assum
 | **The "Single Factor"** | Relates everything to one factor: the health of the overall economy. |
 | **The "Tail" Weakness** | Because it uses a **Gaussian (Normal)** copula, it often **underestimates** how many companies fail together during a true market crash (lack of "tail correlation"). |
 
+# Credit Risk Plust Model
+
+### **1. Key Concept: The "Insurance" Approach**
+
+CreditRisk+ assumes that defaults are independent events that happen "randomly" over time. Because defaults are rare, it uses the **Poisson distribution** to model the _number_ of defaults.
+
+-   **Input:** The expected number of defaults ($\lambda$).
+    
+-   **Output:** The probability of having exactly $n$ defaults.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMzM5MjIzNiwtMzczOTM5Mjc1LDEwNz
-Q5NzU2ODYsMTMwOTcxODQxNCwtMTk5MjQ2MDkwLC0yMDg4NzQ2
-NjEyLC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbLTE1NDQ3Mjk5MiwtNTIzMzkyMjM2LC0zNz
+M5MzkyNzUsMTA3NDk3NTY4NiwxMzA5NzE4NDE0LC0xOTkyNDYw
+OTAsLTIwODg3NDY2MTIsLTMzMjQ1NTM2M119
 -->

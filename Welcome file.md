@@ -53,9 +53,7 @@ The matrix allows you to calculate risk over different periods using basic power
 
 While the math assumes independence, the text highlights a real-world flaw: **Ratings Momentum**. In reality, if a company was just downgraded, it is statistically _more_ likely to be downgraded again soon, rather than the probability reset to a "blank slate."
 
-Does the math for the time horizon adjustments make sense, or would you like to see another example of how the matrix "powers up"?
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwOTcxODQxNCwtMTk5MjQ2MDkwLC0yMD
-g4NzQ2NjEyLC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbMTA3NDk3NTY4NiwxMzA5NzE4NDE0LC0xOT
+kyNDYwOTAsLTIwODg3NDY2MTIsLTMzMjQ1NTM2M119
 -->

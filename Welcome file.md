@@ -155,16 +155,10 @@ $$Pr(m \space defaults)=p^m(1-p)^\alpha\frac{\Gamma(m+\alpha)}{\Gamma(m+1)\Gamma
 
 -   $\alpha:\frac{\mu^2}{\sigma^2}$
     
--   $\frac{\sigma}{}$
-    
--   $PD$: The individual probability of default for the loans (assumed to be the same for all).
-    
--   $\rho$: The **Asset Correlation** (how much the "Economy" factor drives individual defaults).
-    
--   $\alpha$: The confidence level (e.g., 0.999 for bank capital).
+-   $p=\frac{\sigma^2}{(\mu+\sigma)^2}$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MzU4NzIxOSwtMTc1MzIzNDc5NiwtMT
-U0NDcyOTkyLC01MjMzOTIyMzYsLTM3MzkzOTI3NSwxMDc0OTc1
-Njg2LDEzMDk3MTg0MTQsLTE5OTI0NjA5MCwtMjA4ODc0NjYxMi
-wtMzMyNDU1MzYzXX0=
+eyJoaXN0b3J5IjpbLTE0MTkyNDMxNDIsLTE3NTMyMzQ3OTYsLT
+E1NDQ3Mjk5MiwtNTIzMzkyMjM2LC0zNzM5MzkyNzUsMTA3NDk3
+NTY4NiwxMzA5NzE4NDE0LC0xOTkyNDYwOTAsLTIwODg3NDY2MT
+IsLTMzMjQ1NTM2M119
 -->

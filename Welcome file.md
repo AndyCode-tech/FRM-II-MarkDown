@@ -92,17 +92,7 @@ $$WCDR(T,\alpha) = N \left[ \frac{N^{-1}(PD) + \sqrt{\rho} \cdot N^{-1}(\alpha)}
     
 -   **The "Tail":** Because this uses the Gaussian Copula, it assumes the correlation structure is "Normal." As we discussed earlier, this is a major criticism because real-world defaults often cluster more aggressively in the tails than a Normal distribution predicts.
 
-### **4. Summary of Assumptions**
-
-To make the math work, Vasicek’s model makes three big "Large Portfolio" assumptions:
-
-1.  **Homogeneity:** All loans have the same $PD$ and the same correlation $\rho$.
-    
-2.  **Granularity:** The portfolio is large enough that individual "bad luck" (idiosyncratic risk) is diversified away.
-    
-3.  **The Factor:** A single factor (the economy) drives all correlations.
-
-### **5. The Core Formula (WCDR)**
+### **4. Credit VaR**
 
 To turn this rate into an actual **Credit VaR dollar amount**, you apply it to the entire portfolio:
 
@@ -112,8 +102,27 @@ $$\text{Credit VaR} = \sum (\text{EAD}_i \times \text{LGD}_i \times \text{WCDR}_
     
 -   **LGD (Loss Given Default):** The percentage of that money you _won't_ get back (e.g., if you recover 40%, LGD is 60%).
 
+### **5. Determining Correlation ($\rho$)**
+
+A critical input is the **Asset Correlation ($\rho$)**. Since you can't always see the "value" of a private loan daily, the model suggests using proxies:
+
+-   **ROA/ROE Correlation:** Use the correlation of a company’s Return on Assets or Equity.
+    
+-   **Public Proxies:** If the borrower is a private company, use the average correlation of similar publicly traded peers.
+
+
+### **6. Summary of Assumptions**
+
+To make the math work, Vasicek’s model makes three big "Large Portfolio" assumptions:
+
+1.  **Homogeneity:** All loans have the same $PD$ and the same correlation $\rho$.
+    
+2.  **Granularity:** The portfolio is large enough that individual "bad luck" (idiosyncratic risk) is diversified away.
+    
+3.  **The Factor:** A single factor (the economy) drives all correlations.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTkzODM4MjUwLC0zNzM5MzkyNzUsMTA3ND
-k3NTY4NiwxMzA5NzE4NDE0LC0xOTkyNDYwOTAsLTIwODg3NDY2
-MTIsLTMzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbMTI3NjAzMDcxNiwtMzczOTM5Mjc1LDEwNz
+Q5NzU2ODYsMTMwOTcxODQxNCwtMTk5MjQ2MDkwLC0yMDg4NzQ2
+NjEyLC0zMzI0NTUzNjNdfQ==
 -->

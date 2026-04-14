@@ -138,9 +138,10 @@ The model splits the problem into two parts to find the total loss distribution:
 1.  **Default Frequency:** How many defaults occur? (Modeled via Poisson).
     
 2.  **Loss Severity:** How much money is lost when a default occurs? (Loans are often grouped into "bands" of similar exposure size).
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTMyMzQ3OTYsLTE1NDQ3Mjk5MiwtNT
-IzMzkyMjM2LC0zNzM5MzkyNzUsMTA3NDk3NTY4NiwxMzA5NzE4
-NDE0LC0xOTkyNDYwOTAsLTIwODg3NDY2MTIsLTMzMjQ1NTM2M1
-19
+eyJoaXN0b3J5IjpbODAyMTI2Nzg2LC0xNzUzMjM0Nzk2LC0xNT
+Q0NzI5OTIsLTUyMzM5MjIzNiwtMzczOTM5Mjc1LDEwNzQ5NzU2
+ODYsMTMwOTcxODQxNCwtMTk5MjQ2MDkwLC0yMDg4NzQ2NjEyLC
+0zMzI0NTUzNjNdfQ==
 -->

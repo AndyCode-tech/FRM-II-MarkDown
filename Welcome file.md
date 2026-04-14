@@ -139,9 +139,20 @@ The model splits the problem into two parts to find the total loss distribution:
     
 2.  **Loss Severity:** How much money is lost when a default occurs? (Loans are often grouped into "bands" of similar exposure size).
 
+### **3. Modeling "Background" Risk (The Gamma Distribution)**
+
+The biggest criticism of a simple Poisson model is that it assumes the default rate is constant. In reality, the economy changes. CreditRisk+ solves this by:
+
+-   Assuming the **mean default rate ($\lambda$)** is itself a random variable.
+    
+-   It uses a **Gamma distribution** to model the volatility of the default rate.
+    
+-   Combining Poisson and Gamma results in a **Negative Binomial distribution**, which has "fatter tails" than a standard Poisson distribution, better capturing the risk of a bad economy.
+
+$$Pr(m \space defaults)=p^m(1-p)^\alpha\frac{\Gamma(m+\alpha)}{\Gamma(m+1)\Gamma(\alpha)}$$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAyMTI2Nzg2LC0xNzUzMjM0Nzk2LC0xNT
-Q0NzI5OTIsLTUyMzM5MjIzNiwtMzczOTM5Mjc1LDEwNzQ5NzU2
-ODYsMTMwOTcxODQxNCwtMTk5MjQ2MDkwLC0yMDg4NzQ2NjEyLC
-0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbLTE3NjQ2MTM1MTcsLTE3NTMyMzQ3OTYsLT
+E1NDQ3Mjk5MiwtNTIzMzkyMjM2LC0zNzM5MzkyNzUsMTA3NDk3
+NTY4NiwxMzA5NzE4NDE0LC0xOTkyNDYwOTAsLTIwODg3NDY2MT
+IsLTMzMjQ1NTM2M119
 -->

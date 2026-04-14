@@ -121,7 +121,7 @@ To make the math work, Vasicek’s model makes three big "Large Portfolio" assum
 | **The "Single Factor"** | Relates everything to one factor: the health of the overall economy. |
 | **The "Tail" Weakness** | Because it uses a **Gaussian (Normal)** copula, it often **underestimates** how many companies fail together during a true market crash (lack of "tail correlation"). |
 
-# Credit Risk Plust Model
+# Credit Risk Plus Model
 
 ### **1. Key Concept: The "Insurance" Approach**
 
@@ -151,8 +151,8 @@ The biggest criticism of a simple Poisson model is that it assumes the default r
 
 $$Pr(m \space defaults)=p^m(1-p)^\alpha\frac{\Gamma(m+\alpha)}{\Gamma(m+1)\Gamma(\alpha)}$$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjQ2MTM1MTcsLTE3NTMyMzQ3OTYsLT
-E1NDQ3Mjk5MiwtNTIzMzkyMjM2LC0zNzM5MzkyNzUsMTA3NDk3
-NTY4NiwxMzA5NzE4NDE0LC0xOTkyNDYwOTAsLTIwODg3NDY2MT
-IsLTMzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbNDUxMjc5ODIxLC0xNzUzMjM0Nzk2LC0xNT
+Q0NzI5OTIsLTUyMzM5MjIzNiwtMzczOTM5Mjc1LDEwNzQ5NzU2
+ODYsMTMwOTcxODQxNCwtMTk5MjQ2MDkwLC0yMDg4NzQ2NjEyLC
+0zMzI0NTUzNjNdfQ==
 -->

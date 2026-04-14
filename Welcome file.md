@@ -66,11 +66,11 @@ Vasicek’s model assumes that a company defaults if the value of its assets fal
 
 ### **2. The Mathematical Formula**
 
-Vasicek used the Gaussian copula to derive a formula for the **Default Rate ($DR$)** of a portfolio that will not be exceeded with a certain confidence level ($1 - \alpha$).
+Vasicek used the Gaussian copula to derive a formula for the **Worst-Case Default Rate ($WCDR(T,\alpha)$)** of a portfolio that will not be exceeded with a certain confidence level ($1 - \alpha$) during time period $T$.
 
 The formula for the **Credit VaR (at confidence level $\alpha$)** is:
 
-$$DR(\alpha) = N \left[ \frac{N^{-1}(PD) + \sqrt{\rho} \cdot N^{-1}(\alpha)}{\sqrt{1 - \rho}} \right]$$
+$$WCDR(T,\alpha) = N \left[ \frac{N^{-1}(PD) + \sqrt{\rho} \cdot N^{-1}(\alpha)}{\sqrt{1 - \rho}} \right]$$
 
 **Where:**
 
@@ -84,7 +84,7 @@ $$DR(\alpha) = N \left[ \frac{N^{-1}(PD) + \sqrt{\rho} \cdot N^{-1}(\alpha)}{\sq
     
 -   $\alpha$: The confidence level (e.g., 0.999 for bank capital).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MzkzOTI3NSwxMDc0OTc1Njg2LDEzMD
-k3MTg0MTQsLTE5OTI0NjA5MCwtMjA4ODc0NjYxMiwtMzMyNDU1
-MzYzXX0=
+eyJoaXN0b3J5IjpbMTY4MzQ0MzM4MSwtMzczOTM5Mjc1LDEwNz
+Q5NzU2ODYsMTMwOTcxODQxNCwtMTk5MjQ2MDkwLC0yMDg4NzQ2
+NjEyLC0zMzI0NTUzNjNdfQ==
 -->

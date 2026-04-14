@@ -150,9 +150,21 @@ The biggest criticism of a simple Poisson model is that it assumes the default r
 -   Combining Poisson and Gamma results in a **Negative Binomial distribution**, which has "fatter tails" than a standard Poisson distribution, better capturing the risk of a bad economy.
 
 $$Pr(m \space defaults)=p^m(1-p)^\alpha\frac{\Gamma(m+\alpha)}{\Gamma(m+1)\Gamma(\alpha)}$$
+
+**Where:**
+
+-   $\alpha:\frac{\mu^2}{\sigma^2}$
+    
+-   $\frac{\sigma}{}$
+    
+-   $PD$: The individual probability of default for the loans (assumed to be the same for all).
+    
+-   $\rho$: The **Asset Correlation** (how much the "Economy" factor drives individual defaults).
+    
+-   $\alpha$: The confidence level (e.g., 0.999 for bank capital).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUxMjc5ODIxLC0xNzUzMjM0Nzk2LC0xNT
-Q0NzI5OTIsLTUyMzM5MjIzNiwtMzczOTM5Mjc1LDEwNzQ5NzU2
-ODYsMTMwOTcxODQxNCwtMTk5MjQ2MDkwLC0yMDg4NzQ2NjEyLC
-0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbMTY3MzU4NzIxOSwtMTc1MzIzNDc5NiwtMT
+U0NDcyOTkyLC01MjMzOTIyMzYsLTM3MzkzOTI3NSwxMDc0OTc1
+Njg2LDEzMDk3MTg0MTQsLTE5OTI0NjA5MCwtMjA4ODc0NjYxMi
+wtMzMyNDU1MzYzXX0=
 -->

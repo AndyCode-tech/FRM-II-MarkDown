@@ -131,8 +131,16 @@ CreditRisk+ assumes that defaults are independent events that happen "randomly" 
     
 -   **Output:** The probability of having exactly $n$ defaults.
 
+### **2. Core Components**
+
+The model splits the problem into two parts to find the total loss distribution:
+
+1.  **Default Frequency:** How many defaults occur? (Modeled via Poisson).
+    
+2.  **Loss Severity:** How much money is lost when a default occurs? (Loans are often grouped into "bands" of similar exposure size).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDQ3Mjk5MiwtNTIzMzkyMjM2LC0zNz
-M5MzkyNzUsMTA3NDk3NTY4NiwxMzA5NzE4NDE0LC0xOTkyNDYw
-OTAsLTIwODg3NDY2MTIsLTMzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbLTE3NTMyMzQ3OTYsLTE1NDQ3Mjk5MiwtNT
+IzMzkyMjM2LC0zNzM5MzkyNzUsMTA3NDk3NTY4NiwxMzA5NzE4
+NDE0LC0xOTkyNDYwOTAsLTIwODg3NDY2MTIsLTMzMjQ1NTM2M1
+19
 -->

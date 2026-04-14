@@ -115,14 +115,15 @@ A critical input is the **Asset Correlation ($\rho$)**. Since you can't always s
 
 To make the math work, Vasicek’s model makes three big "Large Portfolio" assumptions:
 
-1.  **Homogeneity:** All loans have the same $PD$ and the same correlation $\rho$.
-    
-2.  **Granularity:** The portfolio is large enough that individual "bad luck" (idiosyncratic risk) is diversified away.
-    
-3.  **The Factor:** A single factor (the economy) drives all correlations.
+| Feature | Description |
+| :--- | :--- |
+| **Large Portfolio Assumption** | Assumes the portfolio is "granular" (many small loans), so individual (idiosyncratic) risks cancel out, leaving only systematic risk. |
+| **The "Single Factor"** | Relates everything to one factor: the health of the overall economy. |
+| **The "Tail" Weakness** | Because it uses a **Gaussian (Normal)** copula, it often **underestimates** how many companies fail together during a true market crash (lack of "tail correlation"). |
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NjAzMDcxNiwtMzczOTM5Mjc1LDEwNz
+eyJoaXN0b3J5IjpbLTUyMzM5MjIzNiwtMzczOTM5Mjc1LDEwNz
 Q5NzU2ODYsMTMwOTcxODQxNCwtMTk5MjQ2MDkwLC0yMDg4NzQ2
 NjEyLC0zMzI0NTUzNjNdfQ==
 -->

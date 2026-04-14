@@ -53,7 +53,38 @@ The matrix allows you to calculate risk over different periods using basic power
 
 While the math assumes independence, the text highlights a real-world flaw: **Ratings Momentum**. In reality, if a company was just downgraded, it is statistically _more_ likely to be downgraded again soon, rather than the probability reset to a "blank slate."
 
+## Vasicek's Model
+### **1. The Core Intuition**
+
+Vasicek’s model assumes that a company defaults if the value of its assets falls below a certain threshold. It links these defaults together using a **single common factor** (usually interpreted as "The Economy").
+
+-   **Individual Risk:** Each company has its own probability of default ($PD$).
+    
+-   **Systemic Risk:** Every company is exposed to the same economic cycle.
+    
+-   **Idiosyncratic Risk:** Every company has its own unique "bad luck" that isn't related to the economy.
+
+### **2. The Mathematical Formula**
+
+Vasicek used the Gaussian copula to derive a formula for the **Default Rate ($DR$)** of a portfolio that will not be exceeded with a certain confidence level ($1 - \alpha$).
+
+The formula for the **Credit VaR (at confidence level $\alpha$)** is:
+
+$$DR(\alpha) = N \left[ \frac{N^{-1}(PD) + \sqrt{\rho} \cdot N^{-1}(\alpha)}{\sqrt{1 - \rho}} \right]$$
+
+**Where:**
+
+-   $N$: The cumulative standard normal distribution function.
+    
+-   $N^{-1}$: The inverse standard normal distribution (the "Z-score").
+    
+-   $PD$: The individual probability of default for the loans (assumed to be the same for all).
+    
+-   $\rho$: The **Asset Correlation** (how much the "Economy" factor drives individual defaults).
+    
+-   $\alpha$: The confidence level (e.g., 0.999 for bank capital).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NDk3NTY4NiwxMzA5NzE4NDE0LC0xOT
-kyNDYwOTAsLTIwODg3NDY2MTIsLTMzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbLTM3MzkzOTI3NSwxMDc0OTc1Njg2LDEzMD
+k3MTg0MTQsLTE5OTI0NjA5MCwtMjA4ODc0NjYxMiwtMzMyNDU1
+MzYzXX0=
 -->

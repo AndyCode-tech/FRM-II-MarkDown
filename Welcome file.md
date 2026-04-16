@@ -182,9 +182,58 @@ The text argues that real-world default rates are rarely independent from year t
 -   **The Flaw:** Simple models assume each year is a "fresh start."
     
 -   **The Solution:** Using **Monte Carlo simulations** allows analysts to build more "desirable" models that link current default rates to prior years or lagging economic indicators. This captures the cyclical nature of credit markets.
+
+# Credit Metrics Model
+The **CreditMetrics** model, developed by JPMorgan, represents a shift from simple "default-only" models to a more comprehensive **"mark-to-market"** approach. Unlike CreditRisk+, it accounts for the loss in value caused by credit **downgrades** as well as actual defaults.
+
+### 1. The Core Mechanism: Rating Migrations
+
+The model relies on a **rating transition matrix**. This matrix tracks the probability of a counterparty moving from one credit rating (e.g., A) to another (e.g., BBB or Default) over a one-year horizon.
+
+-   **Data Sources:** These transitions are based on either internal bank data or agencies like S&P and Moody's.
+    
+-   **Credit Spreads:** To value a non-defaulted position at the end of the year, the model uses the **term structure of credit spreads** for the counterparty's new rating category.
+    
+
+### 2. Monte Carlo Simulation Process
+
+Because a portfolio contains multiple counterparties with complex correlations, CreditMetrics uses **Monte Carlo simulations** to calculate the one-year **Credit Value at Risk (VaR)**. Each simulation trial follows these steps:
+
+-   **Scenario Generation:** Determine the credit rating of every counterparty at the end of Year 1.
+    
+-   **Default Case:** If a counterparty defaults, the loss is:
+    
+    $$\text{Loss} = \text{EAD} \times (1 - RR)$$
+    
+-   **Non-Default Case:** If the counterparty is downgraded or upgraded, the "loss" (or gain) is the change in the present value of the remaining cash flows, re-valued using the new credit spreads.
+    
+
+### 3. The Valuation Formula
+
+For simulation trials where the counterparty does **not** default in Year 1, the credit loss is calculated by re-valuing the instrument based on the new forward credit spreads. The formula for the loss in a specific simulation trial is:
+
+$$\text{Credit Loss} = \text{Value at Year 0} - \left[ \sum_{i=1}^{n} \frac{\text{CF}_i}{(1 + f_i + s_i)^i} \right]$$
+
+-   **$\text{CF}_i$:** Cash flow at time $i$.
+    
+-   **$f_i$:** Risk-free forward rate for period $i$.
+    
+-   **$s_i$:** Credit spread for the counterparty's **new** rating at Year 1.
+    
+
+### 4. Outcome: Credit VaR
+
+By running thousands of these trials, the model produces a **probability distribution of total credit losses**.
+
+-   An **upgrade** results in a negative loss (a profit), as the debt becomes more valuable.
+    
+-   A **downgrade** results in a positive loss.
+    
+-   The **Credit VaR** is then identified as the percentile of this distribution corresponding to the desired confidence level (e.g., the 99th percentile).
+    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDY2MDI5NCwtMTQxOTI0MzE0MiwtMT
-c1MzIzNDc5NiwtMTU0NDcyOTkyLC01MjMzOTIyMzYsLTM3Mzkz
-OTI3NSwxMDc0OTc1Njg2LDEzMDk3MTg0MTQsLTE5OTI0NjA5MC
-wtMjA4ODc0NjYxMiwtMzMyNDU1MzYzXX0=
+eyJoaXN0b3J5IjpbLTkyODA0NjY5LC0xMTA2NjAyOTQsLTE0MT
+kyNDMxNDIsLTE3NTMyMzQ3OTYsLTE1NDQ3Mjk5MiwtNTIzMzky
+MjM2LC0zNzM5MzkyNzUsMTA3NDk3NTY4NiwxMzA5NzE4NDE0LC
+0xOTkyNDYwOTAsLTIwODg3NDY2MTIsLTMzMjQ1NTM2M119
 -->

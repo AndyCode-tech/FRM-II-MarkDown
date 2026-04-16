@@ -156,9 +156,35 @@ $$Pr(m \space defaults)=p^m(1-p)^\alpha\frac{\Gamma(m+\alpha)}{\Gamma(m+1)\Gamma
 -   $\alpha:\frac{\mu^2}{\sigma^2}$
     
 -   $p=\frac{\sigma^2}{(\mu+\sigma)^2}$
+
+### 4. The Role of Volatility ($\sigma$)
+
+The model uses a volatility parameter ($\sigma$) to determine the shape of the default distribution.
+
+-   **Low Volatility:** As $\sigma$ decreases, the model converges toward a **Poisson distribution**, implying that defaults are relatively predictable and independent.
+    
+-   **High Volatility:** As $\sigma$ increases, the distribution shifts toward a **Negative Binomial distribution**. This creates a "fat tail," meaning there is a much higher likelihood of seeing an extreme number of defaults.
+    
+
+### 5. Default Correlation and Skewness
+
+The paragraph highlights that default rate uncertainty is inextricably linked to **default correlation**:
+
+-   When uncertainty rises, defaults tend to cluster together (correlation increases).
+    
+-   This causes the loss probability distribution to exhibit **positive skew**. Instead of a symmetrical "bell curve," the distribution leans heavily toward the right, indicating a higher probability of catastrophic, large-scale losses.
+    
+
+### 6. Time Dependency and Monte Carlo Simulation
+
+The text argues that real-world default rates are rarely independent from year to year.
+
+-   **The Flaw:** Simple models assume each year is a "fresh start."
+    
+-   **The Solution:** Using **Monte Carlo simulations** allows analysts to build more "desirable" models that link current default rates to prior years or lagging economic indicators. This captures the cyclical nature of credit markets.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTkyNDMxNDIsLTE3NTMyMzQ3OTYsLT
-E1NDQ3Mjk5MiwtNTIzMzkyMjM2LC0zNzM5MzkyNzUsMTA3NDk3
-NTY4NiwxMzA5NzE4NDE0LC0xOTkyNDYwOTAsLTIwODg3NDY2MT
-IsLTMzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbLTExMDY2MDI5NCwtMTQxOTI0MzE0MiwtMT
+c1MzIzNDc5NiwtMTU0NDcyOTkyLC01MjMzOTIyMzYsLTM3Mzkz
+OTI3NSwxMDc0OTc1Njg2LDEzMDk3MTg0MTQsLTE5OTI0NjA5MC
+wtMjA4ODc0NjYxMiwtMzMyNDU1MzYzXX0=
 -->

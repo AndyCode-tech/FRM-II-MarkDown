@@ -231,9 +231,12 @@ By running thousands of these trials, the model produces a **probability distrib
     
 -   The **Credit VaR** is then identified as the percentile of this distribution corresponding to the desired confidence level (e.g., the 99th percentile).
     
+   # Correlation Model 
+    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyODA0NjY5LC0xMTA2NjAyOTQsLTE0MT
-kyNDMxNDIsLTE3NTMyMzQ3OTYsLTE1NDQ3Mjk5MiwtNTIzMzky
-MjM2LC0zNzM5MzkyNzUsMTA3NDk3NTY4NiwxMzA5NzE4NDE0LC
-0xOTkyNDYwOTAsLTIwODg3NDY2MTIsLTMzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbMTYwMzQ3MDY1NSwtOTI4MDQ2NjksLTExMD
+Y2MDI5NCwtMTQxOTI0MzE0MiwtMTc1MzIzNDc5NiwtMTU0NDcy
+OTkyLC01MjMzOTIyMzYsLTM3MzkzOTI3NSwxMDc0OTc1Njg2LD
+EzMDk3MTg0MTQsLTE5OTI0NjA5MCwtMjA4ODc0NjYxMiwtMzMy
+NDU1MzYzXX0=
 -->

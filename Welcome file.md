@@ -232,11 +232,61 @@ By running thousands of these trials, the model produces a **probability distrib
 -   The **Credit VaR** is then identified as the percentile of this distribution corresponding to the desired confidence level (e.g., the 99th percentile).
     
    # Correlation Model 
+    This passage describes the **CreditMetrics** approach to modeling correlated credit risk. Essentially, it explains how we move from looking at one company’s risk to understanding how two or more companies might fail or be downgraded at the same time.
+
+Here is a summary of the core concepts:
+
+----------
+
+### 1. The Core Assumption: Correlated Risk
+
+The model assumes that credit rating changes are **not independent**. If one company in a specific sector struggles, another related company is likely to struggle as well. To quantify this "relatedness," the model uses **equity returns** (stock price movements) as a proxy for credit health.
+
+### 2. The Gaussian Copula Mechanism
+
+To simulate joint rating changes, the model uses a **Gaussian copula**. This involves:
+
+-   **Standard Normal Distributions:** Mapping the probability of rating changes onto a bell curve.
     
+-   **Correlated Sampling:** Randomly drawing values ($x_A$ and $x_B$) that share a specific correlation coefficient (in your example, **0.2**).
+    
+-   **Thresholds (Z-scores):** Mapping specific ranges on that curve to specific rating outcomes.
+    
+
+### 3. Mapping the Transition
+
+The model uses "cutoff points" on the normal distribution to determine the new rating. Based on your data for an **A-rated company**:
+| If the sampled value ($x_A$) is... | New Credit Rating | Transition Type |
+| :--- | :--- | :--- |
+| $x_A < -3.3416$ | **AAA** | Upgrade |
+| $-3.3416 \leq x_A < -2.1201$ | **AA** | Upgrade |
+| $x_A \geq -2.1201$ | **A or Lower** | No change / Downgrade |
+
+
+(Other rating transitions)
+
+### 4. Comparison of Models
+
+The text notes a key distinction between the two major credit risk frameworks:
+
+-   **CreditMetrics:** Focuses on the "Value-at-Risk" of a portfolio based on rating migrations (upgrades/downgrades).
+    
+-   **CreditRisk+:** An actuarial model focusing primarily on default rates.
+    
+-   **The Bottom Line:** If both models use the same assumptions but produce different results, it is usually because they differ on the **predicted timing** of when losses will occur.
+    
+
+----------
+
+> **Key Takeaway:** By using stock correlations and normal distribution thresholds, the model can simulate thousands of scenarios to see how often multiple companies in a portfolio might suffer credit hits simultaneously.
+
+# Credit Spread Risk
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMzQ3MDY1NSwtOTI4MDQ2NjksLTExMD
-Y2MDI5NCwtMTQxOTI0MzE0MiwtMTc1MzIzNDc5NiwtMTU0NDcy
-OTkyLC01MjMzOTIyMzYsLTM3MzkzOTI3NSwxMDc0OTc1Njg2LD
-EzMDk3MTg0MTQsLTE5OTI0NjA5MCwtMjA4ODc0NjYxMiwtMzMy
-NDU1MzYzXX0=
+eyJoaXN0b3J5IjpbMTkwOTQ0MDIzNCwxNjAzNDcwNjU1LC05Mj
+gwNDY2OSwtMTEwNjYwMjk0LC0xNDE5MjQzMTQyLC0xNzUzMjM0
+Nzk2LC0xNTQ0NzI5OTIsLTUyMzM5MjIzNiwtMzczOTM5Mjc1LD
+EwNzQ5NzU2ODYsMTMwOTcxODQxNCwtMTk5MjQ2MDkwLC0yMDg4
+NzQ2NjEyLC0zMzI0NTUzNjNdfQ==
 -->

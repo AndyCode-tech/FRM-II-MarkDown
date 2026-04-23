@@ -282,12 +282,6 @@ The text notes a key distinction between the two major credit risk frameworks:
 
 # Credit Spread Risk
 
-This passage outlines the methodology for calculating **Credit Value at Risk (VaR)**, contrasting traditional historical simulations with the **CreditMetrics** framework.
-
-Here is a structured summary of the key concepts and the specific example provided:
-
-----------
-
 ## 1. Challenges in Traditional Credit VaR
 
 Traditional historical simulation for credit products faces two primary hurdles:
@@ -320,54 +314,23 @@ The example illustrates how to calculate potential value changes over a one-mont
     
 -   **Remaining Life in 1 Month:** 2.917 years.
     
-
-**Probabilistic Outcomes in 1 Month:**
-
-**Rating Change**
-
-**Probability**
-
-**Credit Spread Scenarios (Avg)**
-
-**Value Change Impact**
-
-**Upgrade (A)**
-
-1.0%
-
-70, 90, 110 bps
-
-Price Increases
-
-**Stay (BBB)**
-
-97.6%
-
-120, 150, 180 bps
-
-Minor Price Flux
-
-**Downgrade (BB)**
-
-1.3%
-
-300, 350, 400 bps
-
-Price Drops
-
-**Default**
-
-0.1%
-
-Recovery Value: $300
-
-**Massive Loss**
+| Rating Change | Probability | Credit Spread Scenarios (bps) | Value Change Impact |
+| :--- | :--- | :--- | :--- |
+| **Upgrade (A)** | 1.0% | 70, 90, 110 | Price Increases |
+| **Stay (BBB)** | 97.6% | 120, 150, 180 | Minor Price Flux |
+| **Downgrade (BB)** | 1.3% | 300, 350, 400 | Price Drops |
+| **Default** | 0.1% | Recovery Value: $300 | Massive Loss |
 
 **VaR Results:**
 
 -   **At >99.9% Confidence:** The VaR is **$589.00** (This covers the extreme default scenario).
     
 -   **At 99.467%–99.9% Confidence:** The VaR is **$56.81** (This covers the downgrade to BB scenario).
+
+| Confidence Level | Credit VaR | Scenario Covered |
+| :--- | :--- | :--- |
+| **> 99.9%** | $589.00 | Default ($889 - $300) |
+| **99.467% to 99.9%** | $56.81 | Downgrade to BB |
     
 
 ----------
@@ -384,15 +347,11 @@ The passage concludes by comparing two portfolio management strategies:
     
     -   _Result:_ Generally **lower Credit VaR** because you exit deteriorating positions before they hit rock bottom.
         
-
-----------
-
-**Summary Tip:** If you are studying for a financial certification (like the FRM), remember that CreditMetrics is unique because it focuses on **rating migrations** rather than just daily price volatility.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTQ5ODgwMCwxOTE3ODUyNzE0LDE5MD
-k0NDAyMzQsMTYwMzQ3MDY1NSwtOTI4MDQ2NjksLTExMDY2MDI5
-NCwtMTQxOTI0MzE0MiwtMTc1MzIzNDc5NiwtMTU0NDcyOTkyLC
-01MjMzOTIyMzYsLTM3MzkzOTI3NSwxMDc0OTc1Njg2LDEzMDk3
-MTg0MTQsLTE5OTI0NjA5MCwtMjA4ODc0NjYxMiwtMzMyNDU1Mz
-YzXX0=
+eyJoaXN0b3J5IjpbLTMxNjQ3ODcsMTkxNzg1MjcxNCwxOTA5ND
+QwMjM0LDE2MDM0NzA2NTUsLTkyODA0NjY5LC0xMTA2NjAyOTQs
+LTE0MTkyNDMxNDIsLTE3NTMyMzQ3OTYsLTE1NDQ3Mjk5MiwtNT
+IzMzkyMjM2LC0zNzM5MzkyNzUsMTA3NDk3NTY4NiwxMzA5NzE4
+NDE0LC0xOTkyNDYwOTAsLTIwODg3NDY2MTIsLTMzMjQ1NTM2M1
+19
 -->

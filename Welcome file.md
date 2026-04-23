@@ -232,7 +232,7 @@ By running thousands of these trials, the model produces a **probability distrib
 -   The **Credit VaR** is then identified as the percentile of this distribution corresponding to the desired confidence level (e.g., the 99th percentile).
     
    # Correlation Model 
-    This passage describes the **CreditMetrics** approach to modeling correlated credit risk. Essentially, it explains how we move from looking at one company’s risk to understanding how two or more companies might fail or be downgraded at the same time.
+  This passage describes the **CreditMetrics** approach to modeling correlated credit risk. Essentially, it explains how we move from looking at one company’s risk to understanding how two or more companies might fail or be downgraded at the same time.
 
 Here is a summary of the core concepts:
 
@@ -284,9 +284,9 @@ The text notes a key distinction between the two major credit risk frameworks:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwOTQ0MDIzNCwxNjAzNDcwNjU1LC05Mj
-gwNDY2OSwtMTEwNjYwMjk0LC0xNDE5MjQzMTQyLC0xNzUzMjM0
-Nzk2LC0xNTQ0NzI5OTIsLTUyMzM5MjIzNiwtMzczOTM5Mjc1LD
-EwNzQ5NzU2ODYsMTMwOTcxODQxNCwtMTk5MjQ2MDkwLC0yMDg4
-NzQ2NjEyLC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbMTkxNzg1MjcxNCwxOTA5NDQwMjM0LDE2MD
+M0NzA2NTUsLTkyODA0NjY5LC0xMTA2NjAyOTQsLTE0MTkyNDMx
+NDIsLTE3NTMyMzQ3OTYsLTE1NDQ3Mjk5MiwtNTIzMzkyMjM2LC
+0zNzM5MzkyNzUsMTA3NDk3NTY4NiwxMzA5NzE4NDE0LC0xOTky
+NDYwOTAsLTIwODg3NDY2MTIsLTMzMjQ1NTM2M119
 -->

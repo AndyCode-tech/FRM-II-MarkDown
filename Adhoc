@@ -1,10 +1,211 @@
-Aggregate: 2,300 → 4,000; tenor limits increased to 600–2,500
-HKD: 1,200 → 3,000 (Aggregate); 500 → 1,250 (0–3M to 2–3Y); 300 → 1,250 (3–5Y); 100 → 250 (5–10Y)
-USD: 1,200 → 3,000 (Aggregate); 600 → 1,500 (0–3M to 2–3Y); 450 → 1,500 (3–5Y)
-AUD: 200 → 2,000 (Aggregate); 100 → 1,250 (0–3M to 3–5Y)
-CAD / EUR / GBP: 20 → 100 (Aggregate); 15 → 100 (0–3M to 3–5Y)
-JPY: 60 → 100 (Aggregate, 0–3M to 1–2Y); 5 → 100 (2–3Y to 3–5Y)
-NZD: 60 → 100 (Aggregate, 0–3M to 1–2Y); 15 → 100 (2–3Y to 3–5Y)
-SGD: 60 → 100 (Aggregate, 0–3M to 1–2Y); – → 100 (2–3Y to 3–5Y)
-CNY Offshore: 600 → 2,000 (Aggregate); 500 → 1,250 (0–3M to 2–3Y); 200 → 1,250 (3–5Y)
-CNY Onshore: 100 → 2,000 (Aggregate); 60 → 1,250 (0–3M to 2–3Y); 30 → 1,250 (3–5Y)
+The key distinction is that the November 2026 proposal does not replace the existing IRRBB framework or introduce an entirely new set of capital rules. Instead, it strengthens how banks are expected to demonstrate, validate, monitor and report their interest rate risks.
+
+I’ve compared the proposal against the existing BCBS SRP31 and SRP98 framework effective from 1 January 2026, and included practical banking examples and potential impacts. additional Pillar 2 guidance +2
+
+Draft for Management
+
+BCBS Consultation on Interest Rate Risk in the Banking Book (IRRBB)
+
+Summary of Key Changes, Practical Examples and Potential Impacts
+
+Publication Date: 9 November 2026
+Consultation Deadline: 9 February 2027
+Status: Proposed guidance – not yet finalised
+
+1. Executive Summary
+
+The Basel Committee on Banking Supervision (BCBS) has proposed additional Pillar 2 guidance to strengthen banks’ management of Interest Rate Risk in the Banking Book (IRRBB), following weaknesses identified during periods of sharp interest rate increases and heightened market volatility.
+
+While the existing framework already requires banks to measure interest rate risks, conduct stress testing and maintain adequate capital, the proposed supplement places greater emphasis on:
+
+* Model reliability: More robust backtesting and validation of customer behaviour and interest rate assumptions.
+* Stress testing: More comprehensive sensitivity analyses to identify vulnerabilities under different interest rate scenarios.
+* Embedded losses: Closer monitoring of unrealised losses on securities portfolios and their potential impact on capital.
+* Earnings sensitivity: Additional indicators to assess the short- and medium-term impact on Net Interest Income (NII).
+* Supervisory oversight: More detailed information supporting regulatory reviews, including peer comparisons and assessment of hedging effectiveness.
+
+Overall, the proposals shift the focus towards more granular, evidence-based risk monitoring and supervisory assessments, potentially increasing banks’ compliance and risk management requirements.
+
+2. Comparison: Existing IRRBB Framework vs Proposed Supplement
+
+2.1 Model Risk Management and Validation
+
+Existing Framework
+
+Banks are already required to maintain sound IRRBB models, document key assumptions and conduct independent model validation.
+
+Proposed Supplement
+
+Introduces more detailed guidance on ongoing performance monitoring, backtesting and recalibration of models, particularly those relating to:
+
+* Non-maturity deposits (NMDs)
+* Mortgage prepayments
+* Deposit pricing and customer behaviour
+* Third-party vendor models and data
+
+Practical Example
+
+A bank assumes that 80% of its savings deposits remain stable during interest rate changes. However, backtesting reveals that only 60% remained stable following recent rate increases.
+
+Under the proposed guidance, the bank would be expected to investigate the discrepancy, assess the impact on its IRRBB measurements and consider recalibrating its deposit model.
+
+Potential Impact: Increased model validation workload, stronger data requirements and potentially more conservative assumptions in asset-liability management.
+
+2.2 Stress Testing and Sensitivity Analysis
+
+Existing Framework
+
+Banks already conduct stress testing using prescribed and internal interest rate scenarios, including six supervisory shock scenarios for Economic Value of Equity (EVE).
+
+Proposed Supplement
+
+Provides more practical guidance on stress testing across major balance sheet components, including:
+
+* Different magnitudes and directions of interest rate shocks
+* Sensitivity to key modelling assumptions
+* Non-linear effects of interest rate movements
+* Deposit concentration and customer behavioural changes
+* Reverse stress testing
+
+Practical Example
+
+A bank holds a substantial portfolio of fixed-rate mortgages funded by short-term deposits.
+
+Rather than assessing only the impact of a standard upward interest rate shock, the bank could also test scenarios involving rapid deposit withdrawals, higher deposit funding costs and changes in mortgage prepayment behaviour.
+
+Potential Impact: More comprehensive stress-testing processes, potentially revealing previously underestimated exposures and prompting adjustments to risk limits or hedging strategies.
+
+2.3 IRRBB Controls and Hedging Effectiveness
+
+Existing Framework
+
+Banks are already expected to establish IRRBB risk limits, governance arrangements and authorised hedging strategies.
+
+Proposed Supplement
+
+Provides more explicit guidance on information used to assess IRRBB controls, including hedging effectiveness, authorised instruments, delegated responsibilities and risk exposures before and after hedging.
+
+Practical Example
+
+A bank uses interest rate swaps to hedge its fixed-rate bond portfolio.
+
+Under the proposed guidance, supervisors may request information comparing the bank’s EVE and NII sensitivities before and after hedging, helping assess whether the strategy effectively reduces identified interest rate risks.
+
+Potential Impact: Greater scrutiny of hedging effectiveness, enhanced management reporting and possible adjustments to hedging strategies.
+
+2.4 Embedded Losses in Securities Portfolios
+
+Existing Framework
+
+The existing framework already considers valuation risks associated with banking-book assets, including securities held at historical cost.
+
+Proposed Supplement
+
+Places stronger emphasis on monitoring embedded gains and losses, particularly in investment securities held at amortised cost, and assessing their impact on EVE and available capital headroom.
+
+Practical Example
+
+A bank holds bonds with a book value of HK$1 billion, but their current market value has declined to HK$920 million following interest rate increases.
+
+Although the HK$80 million valuation difference may not immediately be recognised in accounting profit or regulatory capital, the proposed guidance encourages banks to monitor the embedded loss and assess its potential impact on capital headroom under further rate shocks.
+
+Potential Impact: Increased scrutiny of securities portfolio duration and unrealised losses, potentially influencing capital planning, investment decisions and balance sheet strategies.
+
+2.5 Earnings-Based Risk Indicators
+
+Existing Framework
+
+Banks are already required to assess IRRBB using both economic value and earnings-based measures, including NII sensitivity.
+
+Proposed Supplement
+
+Introduces additional short- and medium-term earnings indicators, such as:
+
+* Changes in NII relative to Tier 1 capital
+* Differences between stressed and realised NII
+* NII sensitivity relative to historical core operating profit
+
+These indicators complement existing EVE-based supervisory assessments.
+
+Practical Example
+
+A bank projects annual NII of HK$600 million under its baseline scenario. However, under an adverse interest rate scenario, projected NII falls to HK$450 million.
+
+The bank may need to assess the HK$150 million reduction relative to its capital and earnings capacity, rather than relying solely on its EVE sensitivity.
+
+Potential Impact: Greater emphasis on earnings resilience, potentially affecting deposit pricing, loan pricing, interest rate positioning and capital planning.
+
+2.6 Supervisory Reporting and Peer Comparisons
+
+Existing Framework
+
+Regulators already collect IRRBB information and may compare banks’ risk exposures, modelling assumptions and capital adequacy.
+
+Proposed Supplement
+
+Introduces a more structured concept of Supervisory Information, covering modelling practices, stress testing, hedging, embedded losses and earnings indicators.
+
+It also develops a more detailed peer comparison approach, allowing supervisors to compare banks with similar business models, deposit structures or risk characteristics.
+
+Practical Example
+
+A bank assumes that its non-maturity deposits have an average behavioural maturity of five years, while comparable banks use materially shorter assumptions.
+
+Supervisors may examine the bank’s modelling justification, backtesting results and potential understatement of interest rate risk.
+
+Potential Impact: Additional regulatory information requests, more intensive supervisory reviews and greater pressure to justify modelling assumptions that differ significantly from industry peers.
+
+3. Overall Potential Impacts on Banks
+
+Area	Potential Impact
+Risk Management	More sophisticated model validation, stress testing and monitoring procedures
+Capital Management	Greater scrutiny of capital headroom, earnings resilience and embedded losses
+Treasury / ALM	Potential reassessment of duration mismatches, deposit assumptions and hedging strategies
+Compliance & Reporting	More granular supervisory information, documentation and data management
+Senior Management	Greater expectations for oversight, challenge and justification of IRRBB-related decisions
+
+Banks with significant fixed-rate securities holdings, interest-sensitive deposit bases or material maturity mismatches may experience the greatest impact.
+
+4. Key Considerations and Recommended Actions
+
+The proposals are intended to enhance the existing Pillar 2 framework rather than impose a uniform new capital charge.
+
+Notably, the existing 15% of Tier 1 capital EVE supervisory outlier threshold remains unchanged in the consultation.
+
+Nevertheless, enhanced supervisory assessments could lead to closer monitoring, risk mitigation requirements or additional capital requirements for banks with excessive exposures or inadequate risk management.
+
+Banks may therefore consider:
+
+1. Reviewing existing IRRBB models, assumptions and validation processes against the proposed guidance.
+2. Assessing whether current stress testing adequately captures NII sensitivity, embedded losses and deposit behavioural risks.
+3. Evaluating the adequacy of current management information and supervisory reporting capabilities.
+4. Monitoring the consultation outcome and subsequent implementation by relevant local regulators.
+
+5. Conclusion
+
+The primary implication is not a fundamental change in how interest rate risk is calculated, but a stronger supervisory expectation for how banks identify, validate, control and explain their exposures.
+
+The proposals could increase operational and compliance costs while encouraging more prudent asset-liability management, greater transparency and improved resilience against interest rate volatility.
+
+As the guidance remains under consultation, the final impact will depend on the published requirements, supervisory expectations and local implementation.
+
+Source: BCBS, Interest Rate Risk in the Banking Book – Additional Pillar 2 Guidance, November 2026; existing Basel Framework SRP31 and SRP98.
+
+Important differences to highlight to your boss
+
+These are the distinctions most worth emphasising, because some of the proposed enhancements may otherwise sound like entirely new requirements.
+
+Item	Is it newly introduced in 2026?
+Measuring both EVE and NII	No — already required
+Six prescribed EVE shock scenarios	No — existing framework
+15% Tier 1 capital supervisory outlier threshold	No — unchanged
+Model validation and stress testing	Existing requirements, now supplemented with more detailed practices
+Embedded loss and capital headroom monitoring	Significantly expanded emphasis
+Additional standardised examples of earnings indicators	Yes — additional guidance
+Structured supervisory information and peer-group methodology	Yes — new detailed guidance, building on existing supervisory powers
+
+The comparison is based on the current BCBS framework and the consultation’s proposed amendments, particularly sections 3.1–3.3 and the SRP31/SRP98 annex. Bank for International Settlements +2
+
+All the numerical banking examples are illustrative scenarios, not actual cases or figures reported by the BCBS.
+
+Reference documents: BCBS November 2026 Consultation⁠￼ · Existing SRP31 Framework⁠￼ · Existing SRP98 Guidance⁠￼

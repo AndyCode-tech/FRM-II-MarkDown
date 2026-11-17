@@ -1,0 +1,123 @@
+I’ve updated the summary to include Major Changes, Potential Impact and Recommended Actions for each area, while retaining the relevant SRP31/SRP98 paragraph references.
+
+Summary of Proposed IRRBB Changes and Potential Impact on Banks
+
+Basel Committee on Banking Supervision | November 2026
+
+1. Executive Summary
+
+The Basel Committee on Banking Supervision (BCBS) has proposed additional Pillar 2 guidance on Interest Rate Risk in the Banking Book (IRRBB), with a consultation deadline of 9 February 2027.
+
+The proposals aim to strengthen banks’ IRRBB management following periods of significant interest rate volatility. Key enhancements cover behavioural modelling, model validation, stress testing, earnings sensitivity, embedded losses, hedging controls and supervisory oversight.
+
+While no new Pillar 1 capital requirement is introduced, banks may face increased risk management, governance and reporting expectations.
+
+2. Major Changes, Potential Impact and Recommended Actions
+
+A. Behavioural Assumptions and Deposit Modelling
+
+References: SRP31.42–31.48; SRP98.38–98.49
+
+Changes: Stronger expectations for modelling non-maturity deposits (NMDs), loan prepayments and deposit pricing, including granular customer segmentation, appropriate historical data and forward-looking assumptions.
+
+Potential Impact: Existing deposit stability, behavioural maturity and repricing assumptions may need recalibration, potentially affecting IRRBB exposures and funding strategies.
+
+Recommended Actions:
+
+* Review NMD segmentation and assumptions for deposit stability, behavioural maturity and pass-through rates.
+* Assess the representativeness of historical data and incorporate relevant forward-looking factors.
+* Perform sensitivity analyses to quantify the impact of revised assumptions on EVE and NII.
+
+B. Model Validation and Governance
+
+References: SRP31.55–31.63; SRP98.74–98.76
+
+Changes: Enhanced independent validation, backtesting, performance monitoring and recalibration of key IRRBB models, including third-party models.
+
+Potential Impact: Increased model validation workloads, documentation requirements and potential system enhancement costs.
+
+Recommended Actions:
+
+* Review existing model validation frameworks and backtesting coverage.
+* Establish or enhance model performance thresholds, early warning indicators and escalation procedures.
+* Review vendor models and management overlays, documenting their suitability and justification.
+
+C. Stress Testing Framework
+
+References: SRP31.30–31.38; SRP98.31–98.33
+
+Changes: Greater emphasis on comprehensive stress testing, including multiple interest rate shocks, non-parallel yield curve movements, behavioural sensitivity analyses and reverse stress testing.
+
+Potential Impact: Additional stress-testing capabilities may be required, potentially affecting risk limits, hedging strategies and capital planning.
+
+Recommended Actions:
+
+* Review scenario coverage and identify gaps in existing stress-testing methodologies.
+* Incorporate additional sensitivity and reverse stress-testing scenarios.
+* Evaluate the effects on EVE, NII and capital adequacy, and report material vulnerabilities to ALCO.
+
+D. Earnings-Based Risk Measures
+
+References: SRP31.27–31.29; SRP98.30
+
+Changes: Introduction of supplementary short- and medium-term NII indicators alongside existing EVE measures, including NII sensitivity relative to Tier 1 capital and historical operating profit.
+
+Potential Impact: Greater emphasis on earnings volatility may require enhanced NII forecasting, repricing analysis and management reporting.
+
+Recommended Actions:
+
+* Assess the availability and applicability of the proposed NII indicators.
+* Enhance NII simulations, including repricing gaps and deposit pricing assumptions.
+* Incorporate relevant earnings indicators into internal risk monitoring and ALCO reporting.
+
+E. Embedded Losses and Capital Headroom
+
+References: SRP31.39, 31.69–31.72, 31.80; SRP98.34, 98.78
+
+Changes: Enhanced monitoring of embedded gains and losses, particularly for securities held at amortised cost, including their implications for EVE and capital headroom.
+
+Potential Impact: Banks with significant fixed-income portfolios may face greater supervisory scrutiny and potential pressure on capital planning and investment strategies.
+
+Recommended Actions:
+
+* Quantify embedded gains and losses within investment securities portfolios.
+* Assess valuation changes under different interest rate stress scenarios.
+* Evaluate potential impacts on EVE and capital headroom, incorporating findings into ICAAP and capital planning.
+
+F. IRRBB Controls and Hedging
+
+References: SRP31.22–31.26, 31.64–31.67; SRP98.77
+
+Changes: Greater transparency regarding risk limits, authorised hedging instruments, delegated responsibilities and exposures before and after hedging.
+
+Potential Impact: Stronger governance, hedging effectiveness assessments and documentation may be necessary.
+
+Recommended Actions:
+
+* Review existing IRRBB limits, hedging policies and delegated authorities.
+* Assess and document the impact of hedging strategies on EVE and NII.
+* Enhance ALCO reporting to demonstrate hedging effectiveness and risk mitigation.
+
+G. Supervisory Reporting and Peer Comparison
+
+References: SRP31.74–31.83; SRP98.77–98.80
+
+Changes: Introduction of broader supervisory information covering modelling, stress testing, hedging, earnings indicators and embedded losses, alongside enhanced peer comparisons.
+
+Potential Impact: Increased regulatory reporting expectations and greater supervisory scrutiny of modelling assumptions and risk exposures.
+
+Recommended Actions:
+
+* Conduct a gap assessment of current reporting against proposed supervisory information.
+* Improve data availability, reporting consistency and documentation of key assumptions.
+* Prepare supporting analysis to justify modelling approaches, risk exposures and material deviations from peers.
+
+3. Overall Assessment
+
+The proposals reinforce the importance of comprehensive and forward-looking IRRBB management. Banks should prioritise gap assessments covering behavioural modelling, independent validation, stress testing and embedded-loss monitoring, followed by enhancements to governance and reporting.
+
+Although the proposals do not directly introduce new capital charges, more robust risk assessments and supervisory scrutiny could indirectly affect capital adequacy, hedging strategies and risk appetite.
+
+The recommended actions are preparatory measures rather than confirmed new regulatory obligations. Final requirements and implementation timelines will depend on the outcome of the consultation and adoption by national regulators.
+
+The recommended actions are derived from the proposed requirements and supervisory information examples in the document, particularly SRP31.55–31.83 and SRP98.74–98.80.
